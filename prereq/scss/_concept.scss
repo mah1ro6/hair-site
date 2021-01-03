@@ -1,0 +1,56 @@
+#concept {
+  background: linear-gradient(to bottom, #A193861F 0%,#A193861F 40%,#A1938689 40%,#A1938689 100%);
+    .concept-img-wrap {
+      display: flex;
+      justify-content: space-between;
+      .concept-img {
+        @include sp {
+          width: 50%;
+        }
+        .pc-img {
+          height: 100%;
+          width: 100%;
+          &:first-child {
+            object-fit: cover;
+            object-position: right;
+          }
+        }
+      }
+    }
+    .concept-text {
+      display: flex;
+      justify-content: space-evenly;
+      color: #ffffff;
+      margin-top: 70px;
+      @include sp {
+        flex-direction: column;
+        margin-top: 40px;
+      }
+      h2 {
+        font-size: 4.0rem;
+        // width: 50%;
+        @include tab {
+          white-space: nowrap;
+          font-size: 2.6rem;
+        }
+        @include sp{
+          font-size: 1.8rem;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        width: 40%;
+        @include sp {
+          width: 100%;
+          line-height: 2.5rem;
+          letter-spacing: 0.4rem;
+        }
+      }
+    }
+}
+
+.concept-img:first-child {
+  margin-right: 1rem;
+}

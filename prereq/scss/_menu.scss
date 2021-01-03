@@ -1,0 +1,62 @@
+#menu {
+  width: 100%;
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    @include sp{
+      flex-direction: column;
+    }
+    .person {
+      width: 26%;
+      @include sp{
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        @include sp{
+          height: 40vh;
+          object-fit: cover;
+        }
+      }
+      .person-cacth {
+        font-size: 3.0rem;
+        text-align: center;
+        padding-top: 35px;
+        white-space: nowrap;
+        @include tab {
+          font-size: 2.2rem;
+        }
+        @include sp {
+          font-size: 3.0rem;
+          text-align: left;
+        }
+      }
+      .person-text {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 35px;
+        @include tab {
+          text-align: left;
+          line-height: 2.0rem;
+        }
+      }
+      .person-prise {
+        font-size: 1.6rem;
+        text-align: right;
+        font-weight: bold;
+        padding-top: 35px;
+        @include tab {
+          white-space: nowrap;
+        }
+        @include sp {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

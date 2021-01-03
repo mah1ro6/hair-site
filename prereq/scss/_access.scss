@@ -1,0 +1,70 @@
+#access {
+  background-color:#A193861F;
+  padding-bottom: 70px;
+  @include sp {
+    width: 100%;
+  }
+  h2 {
+    margin-left: 8.4rem;
+    @include sp {
+      margin-left: 4.0rem;
+      margin-bottom: 40px;
+    }
+  }
+  .access-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include sp {
+      flex-direction: column-reverse;
+      
+    }
+    .access-item {
+      background-color: #D0C5BA;
+      height: 40vh;
+      width: 40%;
+      margin: 0 auto;
+      text-align: left;
+      position: relative;
+      @include sp {
+        width: 100%;
+      }
+      table {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%,-50%);
+        height: 192px;
+        @include sp {
+          width: 80%;
+          height: 30vh;
+        }
+        th {
+          font-size: 2.4rem;
+          color: #00000038;
+        }
+        td {
+          font-size: 1.6rem;
+          color: #FFFFFF;
+          white-space: nowrap;
+        }
+      }
+    }
+    .map-wrap {
+      width: 60%;
+      height: 40vh;
+      @include sp{
+        width: 100%;
+      }
+      .map {
+        width: 100%;
+        height: 100%;
+        @include sp {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

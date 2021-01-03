@@ -1,0 +1,60 @@
+// レスポンシブ 
+
+@mixin pc {
+  @media (min-width:901px){
+    @content ;
+  }
+} 
+@mixin tab {
+  @media (max-width:900px){
+    @content ;
+  }
+} 
+@mixin sp {
+  @media (max-width:600px){
+    @content ;
+  }
+} 
+
+// 変数
+$hai: #707070;
+
+// 共通
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 20px;
+  font-family: Roboto Mono for Powerline;
+  letter-spacing: 0.16rem;
+  line-height: 2rem;
+}
+
+.inner {
+  width: 83%;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+
+.title {
+  color: $hai;
+  font-size: 1.8rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 160px;
+  @include sp {
+    margin-bottom: 70px;
+    padding-top: 70px;
+  }
+  &:after {
+    display: inline-block;
+    content: "";
+    background-color: $hai;
+    height: 1px;
+    width: 70px;
+    margin-left: 20px;
+  }
+}
