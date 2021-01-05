@@ -17,10 +17,14 @@
       }
       img {
         width: 100%;
-        height: 100%;
-        @include sp{
-          height: 40vh;
+        max-width: 100%;
+        height: auto;
+        @include tab {
+          height: 60vh;
           object-fit: cover;
+        }
+        @include sp {
+          height: auto;
         }
       }
       .person-cacth {
@@ -38,7 +42,7 @@
       }
       .person-text {
         font-size: 1.6rem;
-        text-align: center;
+        text-align: left;
         padding-top: 35px;
         @include tab {
           text-align: left;
@@ -48,7 +52,7 @@
       .person-prise {
         font-size: 1.6rem;
         text-align: right;
-        font-weight: bold;
+        font-weight: normal;
         padding-top: 35px;
         @include tab {
           white-space: nowrap;

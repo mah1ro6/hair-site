@@ -21,8 +21,12 @@
         position: absolute;
         left: 15%;
       }
+      @include sp {
+        flex-direction: column-reverse;
+      }
       h2 {
         font-size: 3.8rem;
+        font-family:"MS Pゴシック",sans-serif;
         @include tab {
           color: white;
           font-size: 2.8rem;
@@ -30,6 +34,7 @@
       }
       p {
         font-size: 3.8rem;
+        font-family: 'Kaushan Script', cursive;
         @include tab {
           color: white;
           font-size: 2.3rem;
