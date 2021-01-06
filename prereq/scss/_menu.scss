@@ -22,9 +22,6 @@
         @include tab {
           object-fit: cover;
         }
-        @include sp {
-          height: 270px;
-        }
       }
       .person-cacth {
         font-size: 3.0rem;
@@ -64,6 +61,15 @@
   }
 }
 
-.peron-img {
-  height: 40%;
+.person-img-pc {
+  @include sp {
+    display: none;
+  }
+}
+
+.person-img-sp {
+  display: none;
+  @include sp {
+    display: block;
+  }
 }

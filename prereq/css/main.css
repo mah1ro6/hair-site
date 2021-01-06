@@ -527,12 +527,6 @@ nav ul li a {
   }
 }
 
-@media (max-width: 600px) {
-  #menu .menu-item .person img {
-    height: 270px;
-  }
-}
-
 #menu .menu-item .person .person-cacth {
   font-size: 3.0rem;
   text-align: center;
@@ -585,8 +579,20 @@ nav ul li a {
   }
 }
 
-.peron-img {
-  height: 40%;
+@media (max-width: 600px) {
+  .person-img-pc {
+    display: none;
+  }
+}
+
+.person-img-sp {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .person-img-sp {
+    display: block;
+  }
 }
 
 #access {
