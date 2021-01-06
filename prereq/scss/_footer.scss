@@ -11,11 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: translate(0,-80px);
+    transform: translate(20px,-80px);
     position: absolute;
     top: 75%;
     @include sp {
       flex-direction: column-reverse;
+      text-align: center;
     }
     a {
       font-size: 1.8rem;
